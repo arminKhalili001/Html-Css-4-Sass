@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Vaziri';
+  src: url(../dist/font/Vazir.eot);
+  src: url(../dist/font/Vazir.ttf) format("truetype");
+  src: url(../dist/font/Vazir.woff) format("woff");
+  src: url(../dist/font/Vazir.woff2) format("woff2"); }
+
+/* line 1, scss/_utility.scss */
+.container {
+  margin: auto;
+  padding: 0 1.5rem;
+  max-width: 1280px;
+  overflow: hidden; }
+
+/* line 7, scss/_utility.scss */
+.text-center {
+  text-align: center; }
+
+/* line 10, scss/_utility.scss */
+.text-primary {
+  color: #4834d4; }
+
+/* line 13, scss/_utility.scss */
+.bottom-line {
+  width: 3rem;
+  height: 2px;
+  background: #4834d4;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
+/* line 20, scss/_utility.scss */
+.btn-primary, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all .5s; }
+
+/* line 28, scss/_utility.scss */
+.btn-primary {
+  background: #4834d4;
+  color: #333; }
+
+/* line 33, scss/_utility.scss */
+.btn-dark {
+  background: #333;
+  color: #f4f4f4; }
+
+/* line 38, scss/_utility.scss */
+.btn-light {
+  background: #f4f4f4;
+  color: #333; }
+
+/* line 44, scss/_utility.scss */
+a[class^="btn-"]:hover {
+  background: #4834d4;
+  color: white; }
+
+/* line 53, scss/_utility.scss */
+.my-1 {
+  margin: 1rem 0; }
+
+/* line 56, scss/_utility.scss */
+.my-2 {
+  margin: 2rem 0; }
+
+/* line 59, scss/_utility.scss */
+.my-3 {
+  margin: 3rem 0; }
+
+/* line 62, scss/_utility.scss */
+.my-4 {
+  margin: 4rem 0; }
+
+/* line 69, scss/_utility.scss */
+.py-1 {
+  padding: 1rem 0; }
+
+/* line 72, scss/_utility.scss */
+.py-2 {
+  padding: 2rem 0; }
+
+/* line 75, scss/_utility.scss */
+.py-3 {
+  padding: 3rem 0; }
+
+/* line 78, scss/_utility.scss */
+.py-4 {
+  padding: 4rem 0; }
+
+/* line 6, scss/main.scss */
+* {
+  padding: 0px;
+  margin: 0px; }
+
+/* line 10, scss/main.scss */
+body {
+  line-height: 1.5;
+  font-family: "Vaziri";
+  background: #f4f4f4; }
+
+/* line 16, scss/main.scss */
+a {
+  text-decoration: none;
+  color: #333; }
+
+/* line 20, scss/main.scss */
+ul {
+  list-style: none; }
+
+/* line 23, scss/main.scss */
+img {
+  width: 100%; }
+
+/* line 27, scss/main.scss */
+#main-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem; }
+  /* line 33, scss/main.scss */
+  #main-nav ul {
+    display: flex; }
+  /* line 36, scss/main.scss */
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  /* line 39, scss/main.scss */
+  #main-nav a {
+    color: #ffff;
+    border-bottom: 1px transparent solid;
+    padding-bottom: .5rem;
+    --wekit-transition: $property $duration;
+    --ms-transition: $property $duration;
+    --o-transition: $property $duration;
+    transition: border-color 0.5s; }
+    /* line 44, scss/main.scss */
+    #main-nav a:hover {
+      border-color: #ccc; }
+    /* line 47, scss/main.scss */
+    #main-nav a.active {
+      border-color: #4834d4; }
+
+/* line 53, scss/main.scss */
+#header-home {
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../img/development.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff; }
+  /* line 58, scss/main.scss */
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 10%; }
+    /* line 62, scss/main.scss */
+    #header-home .header-content h1 {
+      font-size: 3rem;
+      line-height: 1.2; }
+
+/* line 71, scss/main.scss */
+#home-1 .items {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
+  /* line 76, scss/main.scss */
+  #home-1 .items .fas {
+    color: #4834d4;
+    padding-bottom: 0.4rem; }
+
+/* line 83, scss/main.scss */
+#home-2 .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  /* line 87, scss/main.scss */
+  #home-2 .items li {
+    line-height: 2; }
+    /* line 89, scss/main.scss */
+    #home-2 .items li.items-title {
+      font-size: 1.5rem; }
+    /* line 92, scss/main.scss */
+    #home-2 .items li.items-number {
+      font-size: 2rem;
+      font-weight: bold; }
+  /* line 97, scss/main.scss */
+  #home-2 .items div {
+    padding: 3rem 0; }
+    /* line 99, scss/main.scss */
+    #home-2 .items div:nth-child(odd) {
+      background: #4834d4;
+      color: #FFF; }
+    /* line 103, scss/main.scss */
+    #home-2 .items div:nth-child(even) {
+      background: #f4f4f4; }
+
+/* line 112, scss/main.scss */
+#home-3 .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center; }
+  /* line 117, scss/main.scss */
+  #home-3 .process-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #4834d4;
+    color: #000;
+    font-size: 28px;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    padding: 1rem;
+    border-radius: 50%;
+    --wekit-transition: $property $duration;
+    --ms-transition: $property $duration;
+    --o-transition: $property $duration;
+    transition: all 1s; }
+  /* line 131, scss/main.scss */
+  #home-3 .process-icon {
+    padding: 2rem;
+    background: #333;
+    color: #ffff;
+    border-radius: 80%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    position: relative;
+    --wekit-transition: $property $duration;
+    --ms-transition: $property $duration;
+    --o-transition: $property $duration;
+    transition: all 1s; }
+    /* line 141, scss/main.scss */
+    #home-3 .process-icon:hover {
+      background: #4834d4;
+      width: 90px;
+      height: 90px;
+      line-height: 90px; }
+      /* line 146, scss/main.scss */
+      #home-3 .process-icon:hover .process-step {
+        background: #333;
+        color: #ffff; }
+
+/* line 156, scss/main.scss */
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  /* line 160, scss/main.scss */
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+  /* line 166, scss/main.scss */
+  #main-footer .social .fab {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center; }
+    /* line 175, scss/main.scss */
+    #main-footer .social .fab:hover {
+      background: #4834d4; }
